@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Meeting Minutes</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="favicon.ico"/>
+	</head>
+	<body>
+		<nav>
+			Some important navigation links here, like our CSE 110 team <a href="https://github.com/cse110-sp25-group07/cse110-sp25-group07">GitHub</a>!
+		</nav>
+		<hr/>
+		<header>
+			<h1>Meeting Minutes</h1>
+		</header>
+		<hr/>
+		<main>
+			<section>
+				<h2>HTML Lab Exploration</h1>
+				<h3>Topic: Learning</h2>
+				<h3>Date: Today</h2>
+				<h3>Attendence</h2>
+					<div>
+						<ul>
+							<li>Jonathan</li>
+							<li>Sasha (one of my cats)</li>
+							<li>Muffin (another one of my cats)</li>
+						</ul>
+					</div>
+				<h3>Agenda</h2>
+					<ol>
+						<li>Learning HTML</li>
+						<li>Creating a <i>Meeting Minute</i> layout</li>
+						<li>Using <em>at least one</em> of each of the listed HTML elements</li>
+						<li>Knowing to be <b>bold</b>, which notably isn't <strong>strong</strong></li>
+						<li>Having a good <span>spanning</span> overview</li>
+					</ol>
+				<h3>Unfinished Business</h2>
+					<form>
+						<fieldset>
+							<legend>Send me your Credit Card information</legend>
+							<label for="motherName">What is your mother's maiden name?</label>
+							<input type="text" id="motherName">
+							<br/><br/>
+							<label for="birthday">What's your birthday?</label>
+							<input
+								type="date"
+								id="birthday"
+								value="2001-01-01"
+								min="1950-01-01"
+								max="2050-01-01"
+							/>
+						</fieldset>
+					</form>
+				<h3>New Business</h2>
+					<form>
+						<fieldset>
+							<legend>Do we turn the radio up!?</legend>
+							<label for="yes">Yes</label>
+							<input type="radio" id="yes" name="radioControl"/>
+							<br/>
+							<label for="no">No</label>
+							<input type="radio" id="no" name="radioControl"/>
+						</fieldset>
+						<br/>
+						<fieldset>
+							<legend>Alright, some important stuff to go over:</legend>
+							<input type="button" value="pop">
+							<input type="button" value="plink">
+							<input type="button" value="plork">
+							<br/><br/>
+							<label for="chosen-animal">Which one do you prefer?</label><br/>
+							<select name="chosen-animals" id="chosen-animal">
+								<option value="cats">Cats</option>
+								<option value="dogs">Dogs</option>
+								<option value="both">Both :)</option>
+								<option value="neither">Neither :(</option>
+							</select>
+							<br/><br/>
+							<label for="favorite-cat">Okay even if you prefer dogs, favorite cat?</label><br/>
+							<input list="favorite-cats" id="favorite-cat"/>
+							<datalist id="favorite-cats">
+								<option value="Domestic"></option>
+								<option value="Leopard"></option>
+								<option value="Lynx"></option>
+								<option value="Caracal"></option>
+								<option value="Bobcat"></option>
+								<option value="Manul"></option>
+								<option value="Lion"></option>
+								<option value="Cheetah"></option>
+								<option value="Tiger"></option>
+								<option value="Ocelot"></option>
+								<option value="Serval"></option>
+								<option value="Other"></option>
+							</datalist>
+							<br/><br/>
+							<label for="story">Write me a story about your animal!</label><br/>
+							<textarea id="story" rows="7" cols="49">Start typing here.</textarea>
+						</fieldset>
+					</form>
+				<h3>Misc.</h2>
+					<form>
+						<fieldset>
+							<legend>Check it out</legend>
+							<input type="checkbox" name="checkboxLabel"/>
+							<label for="checkboxLabel">What in tarnation is this little box here?</label>
+						</fieldset>
+					</form>
+				<h3>Pictures & Diagrams</h2>
+					<details>
+						<summary>Do <em><b>NOT</b></em> click this toggle button.</summary>
+						<img src="https://i.kym-cdn.com/photos/images/newsfeed/002/606/605/843.png" alt="Oiiaoiia cat, but normal."/>
+						<p>It is too late for you now, weep for your end is nigh.</p>
+					</details>
+				<h3>Meeting Recording</h2>
+					<video controls width="750" src="/meeting-recording.mp4"></video><br/>
+					<audio controls src="/meeting-recording.mp4"></audio>
+			</section>
+			<section>
+				<h2>Tomorrow's Meeting</h1>
+				<h3>Empty, for tomorrow is yet to come.</h3>
+			</section>
+		</main>
+		<hr/>
+		<footer>
+			This is the footer!
+		</footer>
+	</body>
+</html>
