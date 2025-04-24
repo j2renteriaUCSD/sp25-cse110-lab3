@@ -160,7 +160,7 @@ nav {
 }
 
 .reverser > span {
-	display: flexbox;
+	display: flex;
 }
 
 section h3 {
