@@ -6,11 +6,36 @@ It uses the box model!
 @property --main-font {
 	syntax: "<string>";
 	inherits: false;
-	initial-value: "Monaco";
+	initial-value: "Exo 2";
 }
 
+/* Unfortunately, no keyboard cat on mobile :( */
+#keyboard-cat {
+	display: none;
+}
 * {
 	font-family: var(--main-font, "Courier New");
+	font-size: large;
+}
+
+@media screen and (min-width: 1000px) {
+	* {
+		font-size: small;
+	}
+	h3 {
+		margin-right: 50vw;
+	}
+	#keyboard-cat {
+		display: block;
+		position: fixed;
+		right: 0%;
+		top: 0%;
+		padding: 5px;
+		border: dotted slategray 10px;
+		&:hover {
+			border: dotted pink 10px;
+		}
+	}
 }
 
 a[href] {
@@ -36,11 +61,9 @@ h2 {
 h3 {
 	background-color: color-mix(in oklab, rgb(255, 0, 0) 10%, rgb(0, 0, 255) 25%);
 	color: hsl(135, 80%, 30%);
-	height: 6mm;
-	margin-top: 10px;
-	margin-right: 50vw;
-	margin-bottom: 10px;
-	margin-left: 0px;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1mm;
 	text-align: center;
 }
 
@@ -84,17 +107,6 @@ nav {
 	position: sticky;
 	top: 0%;
 	background-color: aquamarine;
-}
-
-#keyboard-cat {
-	position: fixed;
-	right: 0%;
-	top: 0%;
-	padding: 5px;
-	border: dotted slategray 10px;
-	&:hover {
-		border: dotted pink 10px;
-	}
 }
 
 #keyboard-cat:active {
