@@ -3,7 +3,14 @@
 	<head>
 		<title>Meeting Minutes</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="/style.css"/>
 		<link rel="icon" href="favicon.ico">
+
+		<style>
+			header, footer {
+				background-color: antiquewhite;
+			}
+		</style>
 	</head>
 	<body>
 		<nav>
@@ -33,7 +40,6 @@
 						<li>Creating a <i>Meeting Minute</i> layout</li>
 						<li>Using <em>at least one</em> of each of the listed HTML elements</li>
 						<li>Knowing to be <b>bold</b>, which notably isn't <strong>strong</strong></li>
-						<li>Having a good <span>spanning</span> overview</li>
 					</ol>
 				<h3>Unfinished Business</h3>
 					<form>
@@ -98,6 +104,14 @@
 							<textarea id="story" rows="7" cols="49">Start typing here.</textarea>
 						</fieldset>
 					</form>
+					<div class="reverser">
+						<span>Click</span>
+						<span>this</span>
+						<span>to</span>
+						<span>reverse</span>
+						<span>the</span>
+						<span>words!</span>
+					</div>
 				<h3>Misc.</h3>
 					<form>
 						<fieldset>
@@ -109,8 +123,8 @@
 				<h3>Pictures & Diagrams</h3>
 					<details>
 						<summary>Do <em><b>NOT</b></em> click this toggle button.</summary>
-						<img src="https://i.kym-cdn.com/photos/images/newsfeed/002/606/605/843.png" alt="Oiiaoiia cat, but normal.">
-						<p>It is too late for you now, weep for your end is nigh.</p>
+						<p id="evil-text">It is too late for you now, weep for your end is nigh.</p>
+						<img class="squished-img" src="https://i.kym-cdn.com/photos/images/newsfeed/002/606/605/843.png" alt="Oiiaoiia cat, but normal.">
 					</details>
 				<h3>Meeting Recording</h3>
 					<video controls width="750">
@@ -120,14 +134,21 @@
 						<source src="/meeting-recording.mp3" type="audio/mp3">
 					</audio>
 			</section>
-			<section>
+			<section style="opacity: 35%;">
 				<h2>Tomorrow's Meeting</h2>
 				<h3>Empty, for tomorrow is yet to come.</h3>
+				<h3 class="invis">Maybe some magic tricks?</h3>
 			</section>
 		</main>
 		<hr>
-		<footer>
-			This is the footer!
+		<footer id="footer-grid">
+			<p id="foot1" class="grid-item">Ad enim ea voluptas ipsum enim consectetur repudiandae. Quia ex error accusamus dolor cupiditate. Incidunt iure harum ut est excepturi adipisci repellat. Repellat nobis impedit vel.</p>
+			<p id="foot2" class="grid-item">Qui repudiandae ex sit. Rerum temporibus quod sed et ipsa dolor. Recusandae maxime eveniet earum ea ea at.</p>
+			<p id="foot3" class="grid-item">Necessitatibus consequatur voluptatem nesciunt excepturi at impedit. Itaque nulla maiores sit fugit sunt quisquam. Magnam harum cumque porro. Accusantium officia esse quod. Sit ut nam aspernatur nemo et. Sapiente commodi recusandae mollitia voluptatem eligendi et natus.</p>
 		</footer>
+		<figure id="keyboard-cat">
+			<img src="https://media1.tenor.com/m/adoVIoM4eo4AAAAC/keyboard-cat.gif">
+			<figcaption>You should pet this guy!</figcaption>
+		</figure>
 	</body>
 </html>
