@@ -13,6 +13,10 @@ It uses the box model!
 	font-family: var(--main-font, "Courier New");
 }
 
+a[href] {
+	text-decoration: underline wavy blueviolet 0.1em;
+}
+
 html {
 	background-color: whitesmoke;
 }
@@ -72,8 +76,7 @@ footer {
 #evil-text {
 	font-size: 2rem;
 	text-decoration: rgba(255, 0, 0, 0.3) line-through wavy 0.1em;
-	text-align: center;
-	max-width: 75vw;
+	max-width: 80vw;
 	min-width: 50vw;
 }
 
@@ -89,10 +92,9 @@ nav {
 	top: 0%;
 	padding: 5px;
 	border: dotted slategray 10px;
-}
-
-#keyboard-cat:hover {
-	border: dotted pink 10px;
+	&:hover {
+		border: dotted pink 10px;
+	}
 }
 
 #keyboard-cat:active {
@@ -145,14 +147,30 @@ nav {
 	flex-direction: row-reverse;
 }
 
-span {
+.reverser > span {
 	display: flexbox;
 }
 
-/*
-[attribute=foo]
+section h3 {
+	text-shadow: 7px 3px 2px gray;
+}
 
-img:hover {
+img ~ figcaption {
+	text-align: center;
+}
 
-} */
+legend + label {
+	text-decoration: underline dotted gray 0.1em;
+}
 
+p.crossed {
+	text-decoration: line-through black 0.01em solid;
+}
+
+h3.crossed {
+	text-decoration: line-through yellow 0.05em solid;
+}
+
+ol:has(> li) {
+	background-color: beige;
+}
